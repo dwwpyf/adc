@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小文与小飞</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        /* 设置可视窗口的宽高 */
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: black;
+            
+        }
+ 
+        .container {
+            position: absolute;
+            width: 1000px;
+            height: 500px;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+ 
+        .box {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: run 10s linear infinite;
+        }
+ 
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+        }
+ 
+        /*设置图像大小、边框、圆角、位置*/
+        .circle img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+ 
+        .circle1 {
+            transform: translateZ(500px);
+        }
+ 
+        .circle2 {
+            transform: rotateY(36deg) translateZ(500px);
+        }
+ 
+        .circle3 {
+            transform: rotateY(72deg) translateZ(500px);
+        }
+ 
+        .circle4 {
+            transform: rotateY(108deg) translateZ(500px);
+        }
+ 
+        .circle5 {
+            transform: rotateY(144deg) translateZ(500px);
+        }
+ 
+        .circle6 {
+            transform: rotateY(180deg) translateZ(500px);
+        }
+ 
+        .circle7 {
+            transform: rotateY(216deg) translateZ(500px);
+        }
+ 
+        .circle8 {
+            transform: rotateY(252deg) translateZ(500px);
+        }
+ 
+        .circle9 {
+            transform: rotateY(288deg) translateZ(500px);
+        }
+ 
+        .circle10 {
+            transform: rotateY(324deg) translateZ(500px);
+        }
+ 
+        @keyframes run {
+            0% {
+                transform: rotateY(0);
+            }
+ 
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        h2{color: aliceblue;}
+    </style>
+</head>
+
+<body >
+    <h2 align="center" >我和宝宝的日记<海边篇> </h2>
+    <hr color="white">
+    <div class="container">
+        <div class="box">
+            <div class="circle circle1">
+                <img src="2bf5243af0c9bb95aaff0eb28132189.jpg" alt="">
+            </div>
+            <div class="circle circle2">
+                <img src="8b38df7b62d795ea576d2ac47b20f43.jpg" alt="">
+            </div>
+            <div class="circle circle3">
+                <img src="685e5543a476199049f1bcce6fdb5cd.jpg" alt="">
+            </div>
+            <div class="circle circle4">
+                <img src="77dded6fbb0e2d68fc70569270acb97.jpg" alt="">
+            </div>
+            <div class="circle circle5">
+                <img src="e13dfcf9ad5ab64c9181f18ee4888e4.jpg" alt="">
+            </div>
+            <div class="circle circle6">
+                <img src="339c01a59b04ace18ce2452d7e93205.jpg" alt="">
+            </div>
+            <div class="circle circle7">
+                <img src="548ec984af126725fc0777435a72351.jpg" alt="">
+            </div>
+            <div class="circle circle8">
+                <img src="376016224ca98d2f8d3376210aef5d0.jpg" alt="">
+            </div>
+            <div class="circle circle9">
+                <img src="06937ae5649ad727fbe6b83db72c395.jpg" alt="">
+            </div>
+            <div class="circle circle10">
+                <img src="8a53278c9774cd26ab49b8e4be7b403.jpg" alt="">
+          
+
+        </div>
+    </div>
+</body>
+</html>
